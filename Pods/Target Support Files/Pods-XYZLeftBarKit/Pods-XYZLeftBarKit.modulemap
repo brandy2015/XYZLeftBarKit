@@ -1,0 +1,6 @@
+framework module Pods_XYZLeftBarKit {
+  umbrella header "Pods-XYZLeftBarKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

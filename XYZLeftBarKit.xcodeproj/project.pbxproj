@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		D6947D2F23A7B2E700EBDF12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6947D2D23A7B2E700EBDF12 /* Main.storyboard */; };
 		D6947D3123A7B2E800EBDF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6947D3023A7B2E800EBDF12 /* Assets.xcassets */; };
 		D6947D3423A7B2E800EBDF12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6947D3223A7B2E800EBDF12 /* LaunchScreen.storyboard */; };
+		D6947D3D23A7B34000EBDF12 /* XYZLeftBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6947D3C23A7B34000EBDF12 /* XYZLeftBar.swift */; };
+		EE44C254693D8BBD000E7C58 /* Pods_XYZLeftBarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D9BD1788897ED8E6399728 /* Pods_XYZLeftBarKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78D9BD1788897ED8E6399728 /* Pods_XYZLeftBarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZLeftBarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F56478E672571CA24B1BBE /* Pods-XYZLeftBarKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZLeftBarKit.release.xcconfig"; path = "Target Support Files/Pods-XYZLeftBarKit/Pods-XYZLeftBarKit.release.xcconfig"; sourceTree = "<group>"; };
 		D6947D2423A7B2E700EBDF12 /* XYZLeftBarKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZLeftBarKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6947D2723A7B2E700EBDF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6947D2923A7B2E700EBDF12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,11 @@
 		D6947D3023A7B2E800EBDF12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6947D3323A7B2E800EBDF12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6947D3523A7B2E800EBDF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6947D3C23A7B34000EBDF12 /* XYZLeftBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZLeftBar.swift; sourceTree = "<group>"; };
+		D6947D5323A7C35B00EBDF12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6947D5423A7C35B00EBDF12 /* XYZLeftBarKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = XYZLeftBarKit.podspec; sourceTree = "<group>"; };
+		D6947D5523A7C35B00EBDF12 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F5CA9B51B6EC8D4D7E242117 /* Pods-XYZLeftBarKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZLeftBarKit.debug.xcconfig"; path = "Target Support Files/Pods-XYZLeftBarKit/Pods-XYZLeftBarKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE44C254693D8BBD000E7C58 /* Pods_XYZLeftBarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D2836AEC1B35EAC2DDA123A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78D9BD1788897ED8E6399728 /* Pods_XYZLeftBarKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		565BCC9B194CD18BC1087FC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5CA9B51B6EC8D4D7E242117 /* Pods-XYZLeftBarKit.debug.xcconfig */,
+				C3F56478E672571CA24B1BBE /* Pods-XYZLeftBarKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6947D1B23A7B2E700EBDF12 = {
 			isa = PBXGroup;
 			children = (
+				D6947D5523A7C35B00EBDF12 /* LICENSE */,
+				D6947D5323A7C35B00EBDF12 /* README.md */,
+				D6947D5423A7C35B00EBDF12 /* XYZLeftBarKit.podspec */,
 				D6947D2623A7B2E700EBDF12 /* XYZLeftBarKit */,
 				D6947D2523A7B2E700EBDF12 /* Products */,
+				565BCC9B194CD18BC1087FC5 /* Pods */,
+				2D2836AEC1B35EAC2DDA123A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,7 @@
 		D6947D2623A7B2E700EBDF12 /* XYZLeftBarKit */ = {
 			isa = PBXGroup;
 			children = (
+				D6947D3B23A7B32A00EBDF12 /* Source */,
 				D6947D2723A7B2E700EBDF12 /* AppDelegate.swift */,
 				D6947D2923A7B2E700EBDF12 /* SceneDelegate.swift */,
 				D6947D2B23A7B2E700EBDF12 /* ViewController.swift */,
@@ -67,6 +100,14 @@
 			path = XYZLeftBarKit;
 			sourceTree = "<group>";
 		};
+		D6947D3B23A7B32A00EBDF12 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D6947D3C23A7B34000EBDF12 /* XYZLeftBar.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6947D3823A7B2E800EBDF12 /* Build configuration list for PBXNativeTarget "XYZLeftBarKit" */;
 			buildPhases = (
+				918DBAE35491591F53FD174A /* [CP] Check Pods Manifest.lock */,
 				D6947D2023A7B2E700EBDF12 /* Sources */,
 				D6947D2123A7B2E700EBDF12 /* Frameworks */,
 				D6947D2223A7B2E700EBDF12 /* Resources */,
+				08E316663C08802E29E66411 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +176,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08E316663C08802E29E66411 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XYZLeftBarKit/Pods-XYZLeftBarKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XYZLeftBarKit/Pods-XYZLeftBarKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XYZLeftBarKit/Pods-XYZLeftBarKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918DBAE35491591F53FD174A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYZLeftBarKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6947D2023A7B2E700EBDF12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +225,7 @@
 			files = (
 				D6947D2C23A7B2E700EBDF12 /* ViewController.swift in Sources */,
 				D6947D2823A7B2E700EBDF12 /* AppDelegate.swift in Sources */,
+				D6947D3D23A7B34000EBDF12 /* XYZLeftBar.swift in Sources */,
 				D6947D2A23A7B2E700EBDF12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,11 +368,13 @@
 		};
 		D6947D3923A7B2E800EBDF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CA9B51B6EC8D4D7E242117 /* Pods-XYZLeftBarKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZLeftBarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +388,13 @@
 		};
 		D6947D3A23A7B2E800EBDF12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F56478E672571CA24B1BBE /* Pods-XYZLeftBarKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZLeftBarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
