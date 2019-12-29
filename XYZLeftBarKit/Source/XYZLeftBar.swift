@@ -13,6 +13,7 @@ class XYZLeftBar: NSObject {
 
 }
 
+
 //SideMenu_Extension
 public extension UIViewController{
     
@@ -35,21 +36,24 @@ public extension UIViewController{
         //        // Copy all settings to the other menu
         //        rightMenuNavigationController.settings = leftMenuNavigationController.settings
     }
-    func AddLeftSideBar() {
+    func AddLeftSideBar(menuWidth:Double = 200) {
         let NAV = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "LeftSideMemuTVCID")
         let leftMenuNavigationController = SideMenuNavigationController(rootViewController: NAV)
+        leftMenuNavigationController.menuWidth = CGFloat(menuWidth)
         
-        SideMenuManager.default.leftMenuNavigationController = leftMenuNavigationController
+        SideMenuManager.default.leftMenuNavigationController =  leftMenuNavigationController
+        
         SideMenuManager.default.addPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         
         
     }
     
-    func PresentLeftSideBar() {
+    func PresentLeftSideBar(menuWidth:Double = 200) {
         let NAV = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "LeftSideMemuTVCID")
         let menu = SideMenuNavigationController(rootViewController: NAV)
         menu.leftSide = true
+        menu.menuWidth = CGFloat(menuWidth)
         present(menu, animated: true, completion: nil)
     }
 }
