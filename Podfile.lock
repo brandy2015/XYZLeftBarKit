@@ -1,5 +1,5 @@
 PODS:
-  - SideMenu (6.4.7)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - SideMenu
@@ -9,8 +9,8 @@ SPEC REPOS:
     - SideMenu
 
 SPEC CHECKSUMS:
-  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
 PODFILE CHECKSUM: cad4cd3db8b3e4cdaf7c67548e0416fcbd38fd1a
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1
